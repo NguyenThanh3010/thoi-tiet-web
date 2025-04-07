@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dự báo thời tiết</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="icon" class="icon" /> <span>Dự báo thời tiết</span></h1>
+    
+    <input list="cityList" id="cityInput" placeholder="Nhập hoặc chọn tên thành phố..." />
+    <datalist id="cityList">
+      <!-- Việt Nam -->
+      <option value="Hanoi,VN">
+      <option value="Ho Chi Minh City,VN">
+      <option value="Da Nang,VN">
+      <option value="Can Tho,VN">
+      <option value="Hai Phong,VN">
+      <option value="Hue,VN">
+      <option value="Ha Long,VN">
+      <!-- Quốc tế -->
+      <option value="London,GB">
+      <option value="Paris,FR">
+      <option value="New York,US">
+      <option value="Tokyo,JP">
+      <option value="Seoul,KR">
+      <option value="Bangkok,TH">
+      <option value="Beijing,CN">
+      <option value="Berlin,DE">
+      <option value="Sydney,AU">
+      <option value="Moscow,RU">
+    </datalist>
+
+    <button id="weatherBtn">Xem thời tiết</button>
+    <div id="weatherResult"></div>
+  </div>
+
+  <div class="sky">
+    <div class="cloud-layer layer1"></div>
+    <div class="cloud-layer layer2"></div>
+    <div class="cloud-layer layer3"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
